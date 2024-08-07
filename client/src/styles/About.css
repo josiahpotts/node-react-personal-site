@@ -1,0 +1,41 @@
+.about-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    font-size: 30px;
+    margin: auto;
+    background-color: #91858562;
+  }
+
+.about-image{
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 13vh;
+}
+
+.about-content{
+    position: absolute;
+    width: 40%;
+    left: 2vw;
+}
+
+.about-content h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 45px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.about-content p {
+    font-size: 30px;
+    padding-bottom: 20px;
+
+}

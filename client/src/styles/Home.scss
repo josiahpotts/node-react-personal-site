@@ -1,0 +1,194 @@
+#Home {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #b5b5b5;
+  width: 100%;
+}
+
+.textContainer{
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 60%;
+  z-index: 1;
+  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-size: 30px;
+}
+
+.textContainer h1, h2 {
+  // text-align: center;
+  top: 5vh;
+  color: #333;
+  // text-shadow: 5px 5px 5px rgb(193, 15, 199);
+  padding-left: 10vw;
+}
+
+.textContainer h1 {
+  font-size: 3rem;
+}
+
+
+.textContainer h2 {
+  font-size: 2rem;
+}
+.textContainer p {
+  padding-top: 35vh;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #777;
+  z-index: 1;
+  padding-left: 10vw;
+}
+
+.chat-box{
+  padding-top: 30px;
+  z-index: 1;
+  margin-left: 2%;
+}
+
+.imgContainer{
+  position: absolute;
+  top: 13vh;
+  width: 40%;
+  right: 7vw;
+  z-index: 0;
+}
+
+
+#chat-button {
+  padding: 20px;
+  background-color: #03a100;
+  
+}
+
+$placeholder-color: #474747;
+$placeholder-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+
+#text-entry {
+  font-size: 30px;
+  /* Set the font size */
+  width: 30vw;
+  /* Set the width */
+  padding: 10px;
+  /* Add some padding */
+  text-align: center;
+  color: $placeholder-color;
+  text-shadow: $placeholder-shadow;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+#text-entry::placeholder::after {
+  content: "\u2588"; /* ASCII code 219 (block character) */
+  display: inline-block;
+  margin-left: 2px; /* Adjust the margin as needed */
+  animation: blink 1s infinite;
+}
+
+
+
+
+
+#text-entry::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: $placeholder-color;
+  text-shadow: $placeholder-shadow;
+
+}
+
+#text-entry:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: $placeholder-color;
+  text-shadow: $placeholder-shadow;
+}
+
+#text-entry::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: $placeholder-color;
+  text-shadow: $placeholder-shadow;
+}
+
+#text-entry:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: $placeholder-color;
+  text-shadow: $placeholder-shadow;
+}
+
+#text-entry:focus {
+  outline: none;
+}
+
+#chat-box {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    border: 1px solid #000000;
+    padding: 10px;
+    background: #fff;
+    overflow-y: auto;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000; /* Ensure it's on top of other content */
+}
+
+#chat-input {
+    width: 100%;
+    font-size: 30px;
+}
+
+#modal-input {
+    position: fixed;
+    width: 78%;
+}
+
+#messages {
+    height: 90%;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#resume-button {
+  padding: 20px;
+  background-color: #03a100;
+  cursor: pointer;
+}
+
+
+/* close button */
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    padding: 20px;
+    background-color: #a10000;
+    cursor: pointer;
+}
+/* close button */
+#minimize-button {
+  position: absolute;
+  top: 0;
+  right: 85px;
+  padding: 20px;
+  background-color: #e5e241;
+  cursor: pointer;
+}
+
+.avatar-image {
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+}
